@@ -107,10 +107,7 @@ header section.container nav.right ul li a button.two {
     line-height: 1.5em;
     
 }
-#spotlight section.item div.content_box a{
-    
 
-}
 #spotlight section.item div.content_box a button {
     margin-top: 30px;
     padding: 15px 25px;
@@ -144,7 +141,7 @@ header section.container nav.right ul li a button.two {
     
 }
 #references div.item {
-    height: 150px;
+    /* height: 150px; */
     background-color: #f7f9fc;
 }
 #references div.item ul {
@@ -282,7 +279,7 @@ header section.container nav.right ul li a button.two {
     border-radius: 15px;
     box-shadow: 0 0 2px 2px rgb(246, 246, 253);
     width: 35%;
-    height: 400px;
+    /* height: 400px; */
     margin-right: 80px;
    
     
@@ -553,11 +550,11 @@ header section.container nav.right ul li a button.two {
 #features section.bottom div.item div.content_box a {
    
    
+   
 }
 #features section.bottom div.item div.content_box a button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    text-align: center;
     background-color: #08070e;
     padding: 15px 38px;
     border-radius: 10px;
@@ -579,7 +576,6 @@ footer section.container {
     display: flex;
     gap: 10%;
     align-items: center;
-    margin-bottom: 50px;
    
 
 }
@@ -715,167 +711,274 @@ footer section.container div.right div.item div.social small:nth-child(5) {
 
     }
 
+        
+    #categories div.item ul {
+        flex-wrap: wrap;
+
+    }
+    #categories div.item ul li {
+        width: 44%;
+        margin-bottom: 20px;
+    }
+    #courses div.item ul {
+        flex-wrap: wrap;
+    }
+
+    #courses div.item ul li {
+        margin-bottom: 20px;
+        width: 40%;
+    }
+
+
+    #instructors div.item ul {
+        flex-wrap: wrap;
+    }
+    #instructors div.item ul li {
+        margin-bottom: 30px;
+    }
+    #features section.container ul {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    #features section.container ul li {
+        width: 46%;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    #features section.bottom div.item div.left img {
+        width: 70%;
+    }
+    #features section.bottom div.item div.right img {
+        width: 80%;
+        margin-left: 60px;
+    }
+
+    #features section.bottom div.item div.content_box h2 {
+        font-size: 30px;
+    }
+    footer section.container div.right{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 80px;
+    }
+    footer section.container div.right div.item {
+        width: 36%;
+        margin-bottom: 20px;
+    }
+
+    footer section.container div.right div.item div.social {
+        width: 300px;
+    }
+    footer section.container div.left {
+        margin-bottom: 140px;
+    }
+
+}
+
+
+
+@media all and (max-width:768px) {
+
+    #spotlight section.item div.content_box h2 {
+        font-size: 25px;
+
+
+    }
+
+    #spotlight section.item div.content_box p {
+        font-size: 15px;
+
+    }
+    #spotlight section.item div.img_container img {
+        width: 300px;
+    }
+    #categories div.item ul li {
+        margin-right: 20px;
+    }
+    #features section.container ul li {
+        margin-right: 20px;
+        padding: 20px;
+    }
+    #features section.container {
+        padding: 0 40px;
+
+    }
+    #features section.top {
+        padding: 0 40px;
+    }
+    #features section.bottom div.item {
+        margin-bottom: 30px;
+    }
+
+
+
+}
+@media all and (max-width:640px) {
+    #spotlight section.item div.img_container {
+        display: none;
+    }
+    #spotlight section.item div.content_box {
+        padding-bottom: 0;
+        text-align: center;
+        width: 100%;
+        padding-top: 80px;
+    }
+    #spotlight section.item div.content_box h2 {
+        font-size: 35px;
+    }
+    #spotlight section.item div.content_box p {
+        font-size: 16px;
+    }
+
+    footer section.container {
+        display: block;
+        padding-top: 40px;
+    }
+    footer section.container div.left{
+        text-align: center;
+    }
+    footer section.container div.left p br {
+        display: none;
+    }
+    footer section.container div.right {
+        margin-left: 0;
+
+    }
+    footer section.container div.left {
+        margin-bottom: 0;
+    }
+    #features section.bottom div.item {
+        flex-direction: column;
+
+    }
+    #features section.bottom div.item:last-child {
+        flex-direction: column-reverse;
+    }
+    #features section.bottom {
+        padding-top: 30px;
     
-#categories div.item ul {
-    flex-wrap: wrap;
-
-}
-#categories div.item ul li {
-    width: 44%;
-    margin-bottom: 20px;
-}
-#courses div.item ul {
-    flex-wrap: wrap;
-}
-
-#courses div.item ul li {
-    margin-bottom: 20px;
-    width: 40%;
+    }
+    #features section.bottom div.item div.content_box h2 {
+        margin-top: 20px;
+    }
+    #features section.bottom div.item div.content_box {
+        text-align: center;
+ 
+    }
+    #features section.bottom div.item div.left img {
+        width: 90%;
+    }
 }
 
 
-#instructors div.item ul {
-    flex-wrap: wrap;
-}
-#instructors div.item ul li {
-    margin-bottom: 30px;
-}
-#features section.container ul {
-    flex-wrap: wrap;
-    justify-content: center;
+@media all and (max-width:480px) {
+    #spotlight section.item div.content_box p br {
+        display: none;
+    }
+    #references div.item ul {
+        flex-wrap: wrap;
+    }
+    #references div.item ul li {
+        margin-bottom: 40px
+    }
+    #categories div.item ul li {
+        width: 100%;
+    }
+    #courses div.item ul li {
+        width: 100%;
+    }
+    #features section.top{
+        padding: 0 20px;
+    }
+    #features section.top h1 {
+        font-size: 25px;
+    }
+    #features section.top div.arrow img.left {
+        padding: 10px 20px;
+    }
+    #features section.top div.arrow img.right {
+        padding: 10px 20px;
+    }
+    #features section.bottom div.item div.content_box p br {
+        display: none;
+    }
+    #features section.bottom div.item div.left img {
+        width:70%;
+        margin-left: 50px;
+    }
+    #features section.container ul li {
+        width: 100%;
+    }
 
 }
+@media all and (max-width:360px) {
+    header section.container nav.right ul {
+        display: none;
 
-#features section.container ul li {
-    width: 46%;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    }
+    header section.container h1.left {
+        width: 100%;
+        text-align: center;
+    }
+    #spotlight section.item div.content_box h2 {
+        font-size: 30px;
+    }
+    #categories div.top h2 {
+        font-size: 20px;
+    }
+    #courses div.top h2 {
+        font-size: 20px;
+    }
+    #instructors div.top h1 {
+        font-size: 20px;
+    }
+    #features section.top h1 {
+        font-size: 20px;
+        margin-top: 30px;
+        width: 70%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    }
+    #features section.top h1 br {
+        display: none;
+ 
+    }
+
+    #features section.top div.arrow img.left { 
+        padding: 5px 10px;
+    }
+    #features section.top div.arrow img.right { 
+        padding: 5px 10px;
+    }
+    #features section.bottom div.item div.content_box a button {
+        padding: 15px 25px;
+    }
+
 }
-
-#features section.bottom div.item div.left img {
-    width: 70%;
-}
-#features section.bottom div.item div.right img {
-    width: 80%;
-    margin-left: 60px;
-}
-
-#features section.bottom div.item div.content_box h2 {
-    font-size: 30px;
-}
-footer section.container div.right{
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-left: 80px;
-}
-footer section.container div.right div.item {
-    width: 36%;
-    margin-bottom: 20px;
-}
-
-footer section.container div.right div.item div.social {
-    width: 300px;
-}
-footer section.container div.left {
-    margin-bottom: 140px;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media all and (max-width:320px) {
+    #spotlight section.item div.content_box h2 {
+        font-size: 25px;
+    }
+    #features section.top h1 {
+        font-size: 18px;
+    }
+    #features section.bottom div.item div.content_box h2 {
+        font-size: 20px;
+    }
+    #features section.bottom div.item div.content_box p {
+        font-size: 15px;
+    }
+    #features section.bottom div.item div.content_box a button {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+    #features section.bottom div.item div.left img {
+        margin-left: 40px;
+    }
+    #features section.bottom div.item div.right img {
+        margin-left:40px;
+    }
+    
+    }
 
